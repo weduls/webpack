@@ -6,6 +6,10 @@ String.prototype.trim = function() {
 	return this.replace(/(^\s*)|(\s*$)/gi, "");
 };
 
+const testAlert = function (input) {
+	alert(input);
+}
+
 function sendWorkAjax(sendUrl, param, type, trueCallback, errorCallback) {
 	$.ajax({
 		type : type,
@@ -173,7 +177,6 @@ function getInterVersion() {
 
 // close page function
 function closePage() {
-	alert('ddd');
 	window.open("about:blank", "_self").close();
 };
 
@@ -219,4 +222,6 @@ function getMessage(message) {
 	});
 };
 
-export default 'commonUtil';
+// export 진행 시 그 라이브러리 로드하여 바로 사용 가능
+// export default test; 시 import tt from a 하여 a() 이렇게 바로 사용 가능
+export default testAlert;

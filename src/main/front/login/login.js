@@ -1,10 +1,9 @@
-import $ from '../jslib/jquery.1.11.2.min.js'
-import common from '../jslib/commonUtil'
+import $ from 'jquery';
+import Common from 'common';
 
-window.onload = function() {
-	var $id = $('#textId');
-	
-	$id.text("dfdfdf");
-	
-  alert('ddfdsfad');
-};
+var $id = $('#textId');
+
+$id.text('hey babo ya');
+
+alert('ddfdsad');
+Common('dani is crazy');
